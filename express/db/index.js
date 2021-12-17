@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
-let MONGODB_URL = 'mongodb://127.0.0.1:27017/PokemonGameDatabase';
+
+let MONGODB_URI = 'mongodb://127.0.0.1:27017/PokemonGameDatabase';
 
 mongoose
-  .connect(MONGODB_URL, {
+  .connect(MONGODB_URI, {
     useUnifiedTopology: true,
     useNewURLParser: true
   })

@@ -16,10 +16,10 @@ const main = async () => {
     }
   ];
   await Review.insertMany(reviews);
-  console.log('created Publishers');
+  console.log('created Reviews');
 };
 const run = async () => {
   await main();
-  db.closed();
+  db.close();
 };
 run();
