@@ -8,4 +8,6 @@ router.get('/getallgames', controller.getAllGames);
 
 router.post('/creategame', controller.createGame);
 
+router.get('/getgamebyid/:id', controller.getGameById);
+
 module.exports = router;

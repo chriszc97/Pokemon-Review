@@ -1,14 +1,21 @@
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import { BrowserRouter, Routes } from 'react-router-dom';
+
 import Home from './compenonts/Home';
 import React from 'react';
+import NavBar from './compenonts/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <switch>
-        <Route exact path="/" component={Home} />
-      </switch>
+      <header className="App-header">
+        <NavBar />
+        <Home />
+        <Routes>
+          <Route exact path="/" component={Home} />
+        </Routes>
+      </header>
     </div>
   );
 }

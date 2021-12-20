@@ -1,5 +1,5 @@
 const db = require('../db');
-const { Game, Review } = require('../models');
+const { Game } = require('../models');
 
 db.on(
   'error',
@@ -20,11 +20,24 @@ const main = async () => {
       // review_id: sniperKiller[0]._id
     },
     {
+      title: 'Pokemon Fire Red',
+      release_date: 'January 29, 2004',
+      image: 'https://imgur.com/u424JbL',
+      details:
+        'Set off on a grand adventure to fulfill your dreams of becoming a Pokemon Master! Explore the Kanto region and discover wild Pokemon around every corner.'
+      // review_id: pokeLover[0]._id
+    },
+    {
       title: 'Pokemon Emerald',
       release_date: 'September 16, 2004',
-      image: 'https://i.imgur.com/JC56sG2.jpg',
+      image: 'https://i.imgur.com/VBTQh8t.jpgg',
       details: 'The hoen Region!!'
-      // review_id: pokeLover[0]._id
+    },
+    {
+      title: 'Pokemon Platinum',
+      release_date: 'September 18, 2008',
+      image: 'https://i.imgur.com/NQ5dk9R.png',
+      details: 'The Sinoh Region!!'
     }
   ];
   await Game.insertMany(games);
