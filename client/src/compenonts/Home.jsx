@@ -2,12 +2,16 @@ import { useState, useEffect} from 'react';
 import react from 'react';
 import axios from 'axios';
 import Result from './Results';
+import { withRouter } from 'react-router-dom';
+
 
 const BASE_URL = 'http://localhost:3001/api'
 
 
-const Home = (props)=>{
+const Home  = (props)=>{
 
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searched, toggleSearched] = useState(false);
 
 const[games, setGames] = useState([])
 
@@ -21,6 +25,16 @@ const pokeGames = async () =>{
   setGames(res.data.games)
   // console.log(res.data.games)
 }
+
+const handleInput = (e) => {
+  setSearchQuery(e.target.value);
+};
+
+const getSearchResults = async (e) => {
+  e.preventDefault();
+  toggleSearched(true);
+  setSearchQuery('');
+};
   return (
     <div>
       <h1>Pokemon Games!</h1>
@@ -32,16 +46,12 @@ const pokeGames = async () =>{
           title={e.title}
           image={e.image}
           {...e}
-          onClick={() => console.log(props.history)
-            // props.history.push(`/game/${e._id}`)
-        }
+          onClick={() => props.history.push(`/game/${e._id}`)}
           />
         ))}
-        
-
       </section>
     </div>
-  )
-}
+  );
+};
 
 export default Home;
