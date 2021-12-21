@@ -6,8 +6,8 @@ const Game = new Schema(
     title: { type: String, required: true },
     release_date: { type: String, required: true },
     image: { type: String, required: true },
-    details: { type: String, required: true }
-    // review_id: { type: Schema.Types.ObjectID, ref: 'review_id' }
+    details: { type: String, required: true },
+    reviews: { type: Schema.Types.Object, ref: 'reviews' }
   },
   { timestamps: true }
 );
