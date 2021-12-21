@@ -7,7 +7,7 @@ const Game = new Schema(
     release_date: { type: String, required: true },
     image: { type: String, required: true },
     details: { type: String, required: true },
-    reviews: { type: Schema.Types.Object, ref: 'reviews' }
+    reviews: { type: Schema.Types.ObjectId, ref: 'reviews' }
   },
   { timestamps: true }
 );
