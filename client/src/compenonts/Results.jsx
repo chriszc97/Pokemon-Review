@@ -6,7 +6,7 @@ const Result = (props) => {
         <div>
             <div onClick={props.onClick}>
                 <h2>{props.title}</h2>
-                <h3>{props.release_date}</h3>
+                
                 <img src={props.image} alt={props.name} />
             </div>
         </div>
