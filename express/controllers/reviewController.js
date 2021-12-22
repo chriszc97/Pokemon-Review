@@ -48,20 +48,15 @@ const deleteReview = async (req, res) => {
 const updateReview = async (req, res) => {
   try {
     const { id } = req.params;
-    await Review.findByIdAndUpdate(
-      id,
-      req.body,
-      { new: true },
-      (err, review) => {
-        if (err) {
-          res.status(500).send(err);
-        }
-        if (!review) {
-          res.status(500).send('review not found!');
-        }
-        return res.status(200).json(review);
+    await Review.findByIdAndUpdate(id, req.body, { new: true }, (err, rev) => {
+      if (err) {
+        res.status(500).send(err);
       }
-    );
+      if (!rev) {
+        // res.status(500).send('Review not found!');
+      }
+      return res.status(200).json(rev);
+    });
   } catch (error) {
     // return res.status(500).send(error.message);
   }
