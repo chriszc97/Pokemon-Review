@@ -22,11 +22,20 @@ const DisplayReviews = (props) =>{
     // console.log(res.data.review)
   }
 
-  
+
   const deleteReview = async (e) =>{
     const res = await axios.delete(`${BASE_URL}/deletereview/${e._id}`);
-    setDel('review Removed')
+    // setDel('review Removed')
     window.location.reload()
+  }
+  const updateReview = async (e) =>{
+    const res = axios.put(`${BASE_URL}/updatereview/${e._id}`,
+    {
+      username:'',
+      rateing: '',
+      respopnse: ''
+    })
+    console.log(e._id)
   }
   
 
@@ -47,14 +56,12 @@ const DisplayReviews = (props) =>{
             response={e.response}
             username={e.username}
             />
-            <button>
+            <button onClick = {()=> updateReview(e)}>
               Update</button>
               
             <button onClick = { () =>deleteReview(e)}> Remove</button>
             </div>
             
-            // <button onClick ={  () => deleteReview()} >Remove</button>
-            /* onClick = { () => console.log(navigate(`${e._id}`))}>Remove</button></> */
           
         ))}
         

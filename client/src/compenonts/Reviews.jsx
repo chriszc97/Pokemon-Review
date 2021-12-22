@@ -7,7 +7,7 @@ const BASE_URL = 'http://localhost:3001/api'
 
 
 const Reviews=()=>{
-  const[display,setDisplay]=useState(ReviewArray)
+  // const[display,setDisplay]=useState(ReviewArray)
   const [reviews,setReviews]=useState([])
   const [newReview,setNewReview] = useState({
     username: '',
@@ -16,7 +16,7 @@ const Reviews=()=>{
   })
   const review = async () => {
     const res = await axios.post(`${BASE_URL}/createreview`, newReview);
-    setReviews(res.data.reviews);
+    // setReviews(res.data.reviews);
     // console.log(res)
   };
   
