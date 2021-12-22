@@ -56,7 +56,9 @@ const DisplayReviews = (props) =>{
             response={e.response}
             username={e.username}
             />
-            <button onClick = {()=> updateReview(e)}>
+            <button onClick = { () => navigate(`/reviewupdate/${e._id}`)}>
+            
+            {/* {()=> updateReview(e)}> */}
               Update</button>
               
             <button onClick = { () =>deleteReview(e)}> Remove</button>

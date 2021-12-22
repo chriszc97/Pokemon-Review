@@ -7,6 +7,7 @@ import React from 'react';
 import NavBar from './compenonts/NavBar';
 import Details from './compenonts/Details';
 import Reviews from './compenonts/Reviews';
+import UpdateReview from './compenonts/UpdateReview';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/game/:id" element={<Details />} />
+          <Route path="/reviewupdate/:id" element={<UpdateReview />} />
           <Route path="/review" element={<Reviews />} />
         </Routes>
       </BrowserRouter>
