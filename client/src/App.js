@@ -2,12 +2,13 @@ import './App.css';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Home from './compenonts/Home';
+import Home from './components/Home';
 import React from 'react';
-import NavBar from './compenonts/NavBar';
-import Details from './compenonts/Details';
-import Reviews from './compenonts/Reviews';
-import UpdateReview from './compenonts/UpdateReview';
+import NavBar from './components/NavBar';
+import Details from './components/Details';
+import Reviews from './components/Reviews';
+import UpdateReview from './components/UpdateReview';
+import Regions from './components/Regions';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/game/:id" element={<Details />} />
           <Route path="/reviewupdate/:id" element={<UpdateReview />} />
           <Route path="/review" element={<Reviews />} />
+          <Route path="/region" element={<Regions />} />
         </Routes>
       </BrowserRouter>
     </div>

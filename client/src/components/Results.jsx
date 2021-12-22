@@ -4,7 +4,7 @@ const Result = (props) => {
 
     return(
         <div>
-            <div onClick={props.onClick}>
+            <div className='pokeGames' onClick={props.onClick}>
                 <h2>{props.title}</h2>
                 
                 <img src={props.image} alt={props.name} />

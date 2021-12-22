@@ -26,7 +26,7 @@ const pokeGames = async () =>{
 
 
   return (
-    <div>
+    <div  styles={{ }}>
       <h1>Pokemon Games!</h1>
       <section className ="games">
         {games.map((e) =>(
@@ -38,7 +38,6 @@ const pokeGames = async () =>{
           id = {e._id}
           {...e}
           onClick = { () => navigate(`/game/${e._id}`)}
-          // onClick={navigate(`/game/${e._id}`)}
           />
         ))}
       </section>

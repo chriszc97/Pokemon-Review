@@ -1,9 +1,22 @@
 *{
-  background-color: antiquewhite;
+  /* background-color: rgb(185, 162, 132); */
 }
-.App { 
-   text-align: center;
-} 
+ .App { 
+   text-align: center; 
+
+   
+}  
+body{background-image: url('https://i.imgur.com/EfcLz09.jpg?1') ;
+  /* background-repeat:repeat-y; */
+  /* background-attachment: fixed;
+  background-position: center;
+  background-size: contain; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+  background-position: center;
+}
 .games{
   font-family: 'Righteous', cursive;
 }
@@ -14,20 +27,28 @@
   column-gap: 20px;
   row-gap: 20px;
 }
+.games{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.navBar{
+  background-color: rgb(97, 37, 37);
+}
 
 
 
-
-/* .App-header { */
-  /* background-color: #282c34;
+/* .App-header { 
+   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white; */
-/* } */
+  color: white;
+ }  */
 
 
 
