@@ -34,9 +34,6 @@ let params = useParams();
         <p>Game details: {gameDetails.details}</p>
         <Reviews />
         <DisplayReviews />
-        
-
-
     </div>
   )
   

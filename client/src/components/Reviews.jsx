@@ -1,13 +1,9 @@
 
 import React, {useState} from 'react'
-import ReviewArray from './data/myReviews'
 import axios from 'axios'
 const BASE_URL = 'http://localhost:3001/api'
 
-
-
 const Reviews=()=>{
-  // const[display,setDisplay]=useState(ReviewArray)
   const [reviews,setReviews]=useState([])
   const [newReview,setNewReview] = useState({
     username: '',
@@ -16,8 +12,6 @@ const Reviews=()=>{
   })
   const review = async () => {
     const res = await axios.post(`${BASE_URL}/createreview`, newReview);
-    // setReviews(res.data.reviews);
-    // console.log(res)
   };
   
   const theNewReview = (e) =>{
@@ -42,8 +36,10 @@ const Reviews=()=>{
   const formSubmit = (e) => {
     theNewReview(e);
     review();
-    console.log(newReview);
   };
+  const refresh= ()=>{
+    window.location.reload()
+  }
 
   return (
     <div>
@@ -70,10 +66,8 @@ const Reviews=()=>{
       name={'response'}
       placeholder={'response'}
       />
-      <button>Submit</button>
+      <button onClick={refresh}>Submit</button>
       </form>
-      
-
     </div>
   )
 }
