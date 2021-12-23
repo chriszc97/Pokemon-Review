@@ -50,6 +50,22 @@ const main = async () => {
       details:
         "Similar to Diamond and Pearl, Platinum is set in the fictional region of Sinnoh. Platinum features slightly different environments, there is snow on the ground in locations where it was not found in Diamond and Pearl, to reflect this change the player characters and the player's rival are dressed for colder weather when compared with their designs from Diamond and Pearl.",
       reviews: sniperKiller[0]._id
+    },
+    {
+      title: 'Pokemon Black',
+      release_date: 'September 18, 2010',
+      image: 'https://m.media-amazon.com/images/I/51IjaK7+g7L.jpg',
+      details:
+        'Pokémon Black and White takes place in the Unova region, based on New York City. As with all regions, Unova consists of a number of cities and towns connected by Routes. Random encounters may take place in tall grass along routes or in bodies of water. The player occasionally battles Trainers in cities and towns, as well as along routes.',
+      reviews: sniperKiller[0]._id
+    },
+    {
+      title: 'Pokemon Y',
+      release_date: 'October 12, 2013',
+      image: 'https://i.imgur.com/iuNejCH.jpg',
+      details:
+        "Pokémon X and Y are the first titles in the main series presented in fully 3D polygonal graphics, allowing for more interactivity with the overworld and more dynamic action during battles. Players are also able to customize their Pokémon trainer's appearance, choosing gender, skin tone and hair color at the start of the game, and can later acquire outfits and accessories in-game to change their character's look",
+      reviews: sniperKiller[0]._id
     }
   ];
   await Game.insertMany(games);
