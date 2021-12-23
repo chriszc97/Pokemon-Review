@@ -91,9 +91,7 @@ h2{
 .region{
   border-style: solid;
 }
-footer{
-  bottom: 100%;
-}
+
 input{
   height: 30px;
 }
@@ -123,7 +121,12 @@ button{
   color:rgb(251, 251, 145)
   
 }
-
+input{
+  background-color:rgb(251, 251, 145);
+}
+button{
+  background-color: rgb(37, 65, 97);;
+}
 
 
 
