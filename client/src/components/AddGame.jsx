@@ -74,8 +74,7 @@ const AddGame = ()=>{
       name={'details'}
       placeholder={'details'}
       />
-      <button
-      onClick={navigate('/')}>Submit</button>
+      <button>Submit</button>
       </form>
       </div>
   )
