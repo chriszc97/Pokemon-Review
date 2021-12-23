@@ -38,7 +38,7 @@ let params = useParams();
         <h1> {gameDetails.title} </h1>
         <h3>Release Date: {gameDetails.release_date}</h3>
         <img src={gameDetails.image} alt="game" />
-        <p>{gameDetails.details}</p>
+        <p>Game details: {gameDetails.details}</p>
         <Reviews />
         <DisplayReviews />
         

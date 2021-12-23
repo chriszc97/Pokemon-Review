@@ -25,6 +25,7 @@ function App() {
           <Route path="/region" element={<Regions />} />
         </Routes>
       </BrowserRouter>
+      <footer>hello</footer>
     </div>
   );
 }

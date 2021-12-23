@@ -1,46 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 *{
   margin: 0;
-  /* background-color: rgb(185, 162, 132); */
 }
  .App { 
-   /* text-align: center;  */
+   text-align: center; 
 
    
 }  
 body{background-image: url('https://i.imgur.com/EfcLz09.jpg?1') ;
-  /* background-repeat:repeat-y; */
-  /* background-attachment: fixed;
-  background-position: center;
-  background-size: contain; */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
+
+  -webkit-background-size: fit-content;
+  -moz-background-size: fit-content;
   -o-background-size: cover;
   background-size:cover;
-  background-position: center;
+  background-position: fit-content;
 }
 h1{
-  font-family: 'Righteous';
+  font-family: 'Indie Flower';
   margin:0;
+  text-align: center;
+  background-color: rgba(81, 121, 106, 0.945);
+  border-style: solid;
 }
 
 .grid {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 50% 50%;
   column-gap: 20px;
-  row-gap: 20px;
-}
+  row-gap: 20px; */
+} 
 .games{
-  display: flex; 
-  flex-wrap: wrap;
-  justify-content:space-between;
-  gap: 10px;
+  display: inline-grid; 
+  justify-content: space-evenly;
+  justify-content: center; 
+  /* gap: 10px; */
+  height: 200px; 
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 150px;
+  row-gap: 25px;
+}
+h3{
+  color: white;
+  font-style: oblique;
+}
+p{
+  font-size: larger;
+  background-color: rgb(119, 102, 80);
 }
 .navBar{
   justify-content: space-evenly;
   background-color: rgb(37, 65, 97);
   line-height: 45px;
-  color: blue;
   display: flex;
 }
 .pokeGames{
@@ -51,14 +61,11 @@ h1{
   background-color: rgb(97, 91, 91);
   border-style:solid;
   border-color: rgb(0, 0, 0);
-  /* background-image: url('https://i.imgur.com/d9zUvSO.jpg?1');
-  background-position: center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size:contain;
-  background-repeat: repeat-y; */
-  
+  margin: 0;
+  width: 100%;
+  justify-content: space-evenly;
+
+
 }
 a{
   color: black;
@@ -69,6 +76,17 @@ a{
   background-color: rgb(119, 102, 80);
 
 }
+img {
+  width:  260px;
+  height: 250px;
+  object-fit: cover;
+  
+
+}
+footer{
+  bottom: 100%;
+}
+
 
 
 /* .App-header { 

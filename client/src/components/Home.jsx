@@ -26,7 +26,7 @@ const pokeGames = async () =>{
 
 
   return (
-    <div  styles={{ }}>
+    <div>
       <h1>Pokemon Games!</h1>
       <section className ="games">
         {games.map((e) =>(
