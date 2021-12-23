@@ -13,7 +13,7 @@ body{background-image: url('https://i.imgur.com/EfcLz09.jpg?1') ;
   -moz-background-size: fit-content;
   -o-background-size: cover;
   background-size:cover;
-  background-position: fit-content;
+  background-position: cover;
 }
 h1{
   font-family: 'Indie Flower';
@@ -80,8 +80,31 @@ img {
   width:  260px;
   height: 250px;
   object-fit: cover;
+  image-resolution:inherit;
+}
+.regions{
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 175px;
+  row-gap: 50px;
+  justify-content: space-evenly;
+}
+h2{
+  background-color: rgb(37, 65, 97);
+  color:rgb(251, 251, 145);
+  font-family: 'Indie Flower';
+  font-size: 25px;
+}
+.region{
+  border-style: solid;
   
+  /* background-image: url('https://i.imgur.com/EfcLz09.jpg?1') ;
 
+  -webkit-background-size: fit-content;
+  -moz-background-size: fit-content;
+  -o-background-size: cover;
+  background-size:cover;
+  background-position: cover; */
 }
 footer{
   bottom: 100%;
@@ -116,7 +139,7 @@ button{
   width: 450px;
   height:auto;
   justify-content: center;
-  background-color: rgba(37, 65, 97, 0.931);
+  background-color: rgb(37, 65, 97);
   color:  rgb(0, 0, 0);
   font-weight: 300;
   
