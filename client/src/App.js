@@ -22,7 +22,6 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/game/:id" element={<Details />} />
           <Route path="/reviewupdate/:id" element={<UpdateReview />} />
-          <Route path="/review" element={<Reviews />} />
           <Route path="/region" element={<Regions />} />
           <Route path="/addgame" element={<AddGame />} />
         </Routes>

@@ -2,10 +2,9 @@
 *{
   margin: 0;
 }
- .App { 
-   text-align: center; 
+.App { 
+  text-align: center; 
 
-   
 }  
 body{background-image: url('https://i.imgur.com/EfcLz09.jpg?1') ;
 
@@ -23,12 +22,6 @@ h1{
   border-style: solid;
 }
 
-.grid {
-  /* display: grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 20px;
-  row-gap: 20px; */
-} 
 .games{
   display: inline-grid; 
   justify-content: space-evenly;
@@ -97,24 +90,9 @@ h2{
 }
 .region{
   border-style: solid;
-  
-  /* background-image: url('https://i.imgur.com/EfcLz09.jpg?1') ;
-
-  -webkit-background-size: fit-content;
-  -moz-background-size: fit-content;
-  -o-background-size: cover;
-  background-size:cover;
-  background-position: cover; */
 }
 footer{
   bottom: 100%;
-}
-form{
-  /* height: 50px; */
-  /* width: 550px;
-  height: 450px;
-  margin: auto;
-  position: relative; */
 }
 input{
   height: 30px;
@@ -125,7 +103,7 @@ button{
 .reviewGrid{
   display: grid;
   justify-content: center; 
-   align-content: center;
+  align-content: center;
   text-align: center;
   place-items: center;
   row-gap: 20px;
@@ -133,7 +111,6 @@ button{
 
 }
 .reviews{
-  /* display: grid; */
   border-style: double;
   border-color: black;
   width: 450px;
@@ -146,18 +123,6 @@ button{
   color:rgb(251, 251, 145)
   
 }
-
-
-/* .App-header { 
-   background-color: rgb(37, 65, 97);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 1vmin);
-  color: black;
-
- }  */
 
 
 

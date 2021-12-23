@@ -6,8 +6,6 @@ import React, { useEffect } from 'react'
 import {useState} from 'react';
 import {useParams} from 'react-router-dom'
 
-
-
 const UpdateReview = () =>{
   const BASE_URL = 'http://localhost:3001/api/updatereview/'
   let params = useParams();
@@ -24,7 +22,6 @@ const UpdateReview = () =>{
       setUpdate(res.data)
     }
     
-
     const update = (e) => {
       e.preventDefault();
       const currentReview = review;
@@ -37,7 +34,6 @@ const UpdateReview = () =>{
         response: ''
       })
     }
-
   const handleChange = (e) =>{
     setUpdate({
       ...updateReview,
@@ -45,14 +41,10 @@ const UpdateReview = () =>{
     }
     ) 
   }
-
   const formSubmit = (e) => {
     update(e);
     updateTheReview(params.id);
-    // updateTheReview();
-    // console.log(newReview);
   };
-
 
   return (
     <div>
