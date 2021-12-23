@@ -139,9 +139,11 @@ button{
   width: 450px;
   height:auto;
   justify-content: center;
-  background-color: rgb(37, 65, 97);
+  background-color: rgba(37, 65, 97, 0.863);
   color:  rgb(0, 0, 0);
   font-weight: 300;
+  font-family: 'Indie Flower';
+  color:rgb(251, 251, 145)
   
 }
 

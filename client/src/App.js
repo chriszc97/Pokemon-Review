@@ -9,6 +9,7 @@ import Details from './components/Details';
 import Reviews from './components/Reviews';
 import UpdateReview from './components/UpdateReview';
 import Regions from './components/Regions';
+import AddGame from './components/AddGame';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/reviewupdate/:id" element={<UpdateReview />} />
           <Route path="/review" element={<Reviews />} />
           <Route path="/region" element={<Regions />} />
+          <Route path="/addgame" element={<AddGame />} />
         </Routes>
       </BrowserRouter>
     </div>
