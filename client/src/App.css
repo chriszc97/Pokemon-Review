@@ -40,6 +40,7 @@ h3{
 p{
   font-size: larger;
   background-color: rgb(119, 102, 80);
+  font-family: "Indie Flower";
 }
 .navBar{
   justify-content: space-evenly;
