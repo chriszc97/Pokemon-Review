@@ -86,7 +86,41 @@ img {
 footer{
   bottom: 100%;
 }
+form{
+  /* height: 50px; */
+  /* width: 550px;
+  height: 450px;
+  margin: auto;
+  position: relative; */
+}
+input{
+  height: 30px;
+}
+button{
+  height: 36px
+}
+.reviewGrid{
+  display: grid;
+  justify-content: center; 
+   align-content: center;
+  text-align: center;
+  place-items: center;
+  row-gap: 20px;
+  
 
+}
+.reviews{
+  /* display: grid; */
+  border-style: double;
+  border-color: black;
+  width: 450px;
+  height:auto;
+  justify-content: center;
+  background-color: rgba(37, 65, 97, 0.931);
+  color:  rgb(0, 0, 0);
+  font-weight: 300;
+  
+}
 
 
 /* .App-header { 

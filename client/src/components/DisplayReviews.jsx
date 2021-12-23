@@ -49,7 +49,7 @@ const DisplayReviews = (props) =>{
       <h1>Reviews</h1>
       <div className='reviewGrid'>
         {reviews.map((e)=>(
-          <div>
+          <div className='reviews'>
           <ReviewResult
             key={e.id}
             rating={e.rating}

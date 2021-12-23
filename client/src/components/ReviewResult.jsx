@@ -4,9 +4,9 @@ const ReviewResults = (props) => {
 
     return(
         <div>
-                <h3>Username: {props.username}</h3>
-                <h3>Rating: {props.rating}</h3>
-                <h3>Review: {props.response}</h3>
+                <h4>Username: {props.username}</h4>
+                <h4>Rating: {props.rating}</h4>
+                <h4>Review: {props.response}</h4>
           
         </div>
     )
