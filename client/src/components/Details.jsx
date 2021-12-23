@@ -2,15 +2,10 @@ import React from 'react'
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 import {useParams} from 'react-router-dom'
-
 import DisplayReviews from './DisplayReviews'
 import Reviews from './Reviews'
 
-
-
-
-
-const Details = (props) =>{
+const Details = () =>{
 
 let params = useParams();
 
@@ -23,12 +18,10 @@ let params = useParams();
     const getGameDetails = async () =>{
       
       const res = await axios.get(`${BASE_URL}${params.id}`)
-      // console.log(res)
       setGameDetails(res.data.game)
     }
     
     getGameDetails()
-    // console.log(gameDetails)
     return () =>{
       isCanceled = true;
     }

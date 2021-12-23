@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import axios from 'axios'
-const BASE_URL = 'http://localhost:3001/api'
-
+import { useNavigate } from 'react-router-dom';
 
 const AddGame = ()=>{
+  const BASE_URL = 'http://localhost:3001/api'
+  const navigate = useNavigate()
   const[game,setGame] = useState([])
   const[newGame,setNewGame] = useState({
     title: '',
     release_date: '',
     image: '',
-    
     details: ''
   })
 
@@ -37,12 +37,10 @@ const AddGame = ()=>{
     }
     ) 
   }
-
   const formSubmit = (e) => {
     theNewGame(e);
     gameAdd();
   };
-
 
   return (
     <div>
@@ -76,10 +74,9 @@ const AddGame = ()=>{
       name={'details'}
       placeholder={'details'}
       />
-      <button>Submit</button>
+      <button
+      onClick={navigate('/')}>Submit</button>
       </form>
-      
-    
       </div>
   )
 }
