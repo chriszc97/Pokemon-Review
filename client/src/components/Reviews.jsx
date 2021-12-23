@@ -36,8 +36,6 @@ const Reviews=()=>{
     setNewReview({
       ...newReview,
       [e.target.name]: e.target.value,
-      // [e.target.rating]: e.target.value,
-      // [e.target.response]: e.target.value,
     }
     ) 
   }
