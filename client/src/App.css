@@ -57,8 +57,6 @@ p{
   margin: 0;
   width: 100%;
   justify-content: space-evenly;
-
-
 }
 a{
   color: black;
@@ -81,6 +79,7 @@ img {
   column-gap: 175px;
   row-gap: 50px;
   justify-content: space-evenly;
+  box-shadow: 2px 2px;
 }
 h2{
   background-color: rgb(37, 65, 97);
@@ -129,8 +128,13 @@ button{
   height: 45px;
 }
 a:hover {
-  background-color: yellow;
+  background-color: rgb(251, 251, 145);
 }
+button:hover{
+  background-color: rgb(251, 251, 145);
+}
+
+
 
 
 
