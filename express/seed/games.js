@@ -6,7 +6,6 @@ db.on(
 );
 
 const main = async () => {
-  const reviews = await Review.find({});
   const sniperKiller = await Review.find({ username: 'SniperKiller' });
   const pokeLover = await Review.find({ username: 'PokeLover' });
   console.log(sniperKiller[0].response);
@@ -65,6 +64,22 @@ const main = async () => {
       image: 'https://i.imgur.com/iuNejCH.jpg',
       details:
         "Pokémon X and Y are the first titles in the main series presented in fully 3D polygonal graphics, allowing for more interactivity with the overworld and more dynamic action during battles. Players are also able to customize their Pokémon trainer's appearance, choosing gender, skin tone and hair color at the start of the game, and can later acquire outfits and accessories in-game to change their character's look",
+      reviews: sniperKiller[0]._id
+    },
+    {
+      title: 'Pokemon Sun',
+      release_date: 'November 18, 2016',
+      image: 'https://i.imgur.com/SqaEzeC.jpg',
+      details:
+        'Pokémon Sun and Moon are role-playing video games with adventure elements, set in the fictional Alola region (loosely based on Hawaii), presented in a third-person, overhead perspective.',
+      reviews: sniperKiller[0]._id
+    },
+    {
+      title: 'Pokemon Sword',
+      release_date: 'November 15, 2019',
+      image: 'https://i.imgur.com/QfstbbF.jpg',
+      details:
+        'Pokémon Sword and Shield are role-playing video games with adventure elements and in most cases are presented in a fixed camera, third-person perspective; in certain instances free camera movement is available',
       reviews: sniperKiller[0]._id
     }
   ];
