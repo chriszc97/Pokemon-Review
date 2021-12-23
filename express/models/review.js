@@ -9,5 +9,4 @@ const Review = new Schema(
   },
   { timestamp: true }
 );
-// module.exports = mongoose.model('reviews', Review);
 module.exports = Review;

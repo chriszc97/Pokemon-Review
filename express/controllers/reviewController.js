@@ -19,7 +19,6 @@ const getAllReviews = async (req, res) => {
     return res.status(500).send(error.message);
   }
 };
-
 const getreviewbyid = async (req, res) => {
   try {
     const { id } = req.params;
@@ -53,13 +52,10 @@ const updateReview = async (req, res) => {
         res.status(500).send(err);
       }
       if (!rev) {
-        // res.status(500).send('Review not found!');
       }
       return res.status(200).json(rev);
     });
-  } catch (error) {
-    // return res.status(500).send(error.message);
-  }
+  } catch (error) {}
 };
 
 module.exports = {

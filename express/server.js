@@ -6,8 +6,6 @@ const cors = require('cors');
 const routes = require('./router/index.js');
 const PORT = process.env.PORT || 3001;
 
-//connect the models see what they console
-
 const app = express();
 
 app.use(cors());
