@@ -19,10 +19,16 @@ The pokemon review appallows users to view different pokemon games. Users can in
 ![Smile](https://i.imgur.com/Z3XByG3.png)
 ![Smile](https://i.imgur.com/bFuM8aC.png)
 
-### ***Future Updates***
 
+### ***Future Updates***
+- [ ] Make it so that each game has its own review
+- [ ] For regions component, have it so that when users click on region map, it displays region details.
 ***
 
 ### ***Credits***
+#### [w3schools](https://www.w3schools.com/)
+#### [GreeksForGeeks](geeksforgeeks.org)
 
 ***
+### ***Description***
+Pokemon-Review is fun interactive app were users could read reviews for different pokemon games. Users can also write, update, and delete reviews.  Not only that but users can view the different regions from the Pokemon world.
