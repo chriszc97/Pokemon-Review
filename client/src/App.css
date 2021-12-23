@@ -93,7 +93,7 @@ h2{
 }
 
 input{
-  height: 30px;
+  height: 40px;
 }
 button{
   height: 36px
@@ -125,7 +125,11 @@ input{
   background-color:rgb(251, 251, 145);
 }
 button{
-  background-color: rgb(37, 65, 97);;
+  background-color: rgb(37, 65, 97);
+  height: 45px;
+}
+a:hover {
+  background-color: yellow;
 }
 
 
